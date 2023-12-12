@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@tohrubo - 71231058 - Personal Web Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>Welcome to my Webpage</header>
+        <div class="container">
+            <div class="image">
+                <img src="IMG_20230111_181924_908.jpg" length="240px" width="480px">
+            </div>
+            <div class="text">
+                Name Michael Chandra Mahanaim<br/>
+                IG: @tohrubo<br/>
+                City of Origin: Wonosobo<br/>
+                Province of Origin: Jawa Tengah<br/>
+                Country of Origin: Indonesia<br/>
+
+                <p>
+                    Programming skillset:
+                    <ul>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                    </ul>
+                </p>
+                <button id="colorchange"> Change BG Color</button><br/>
+                <br/>
+
+                My Favorite Music:
+                <iframe width="321" height="241" src="https://www.youtube.com/embed/FtutLA63Cp8" title="【東方】Bad Apple!! ＰＶ【影絵】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script>
+            const bodyEle = document.body;
+
+            function Randomcolor() {
+                const colorlist = ["red", "white", "green", "blue"];
+                const randInd = Math.floor(Math.random() * colorlist.length);
+                const randColor = colorlist[randInd];
+                bodyEle.style.backgroundColor = randColor;
+            }
+
+            const trigbutton = document.getElementById("colorchange");
+            trigbutton.addEventListener('click', Randomcolor);
+        </script>
+    </body>
+    <footer>Thx for coming! See you again</footer>
+</html>
